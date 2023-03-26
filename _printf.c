@@ -21,7 +21,8 @@ int _printf(const char *format, ...);
 		return (-1);
 
 	va_start(ap, format);
-	printed_chars += va_arg(ap, format);
+	/*Calling parser function*/
+	printed_chars = parser(format, f_list, ap);
 	va_end(ap);
 	return (printed_chars);
 }

@@ -17,6 +17,7 @@ typedef struct convert
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+int parser(const char *format, convert_t f_list[], va_list ap);
 int _write_char(va_list);
 int print_char(va_list);
 int print_string(va_list);
